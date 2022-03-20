@@ -1,0 +1,298 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration-line: none;
+}
+
+a {
+    color: #444444;
+}
+
+header {
+    height: 210px;
+    color: #333;
+}
+
+h3 {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+i {
+    font-size: 15px;
+    color: rgb(43, 43, 43);
+}
+
+.head_logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.head_logo img {
+    width:155px
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+.content {
+    margin: auto;
+}
+
+.tabs {
+    display: flex;
+    margin: auto;
+    text-align: center;
+}
+
+.tabs .tab {
+    font-size: 1rem;
+    line-height: 50px;
+    width: 228.5px;
+    height: 50px;
+    cursor: pointer;
+    color: #333;
+}
+
+#tab3 {
+    border-right: 0.5px solid #c6c6c6;
+    border-top: 0.5px solid #c6c6c6;
+    border-left: 0.5px solid #c6c6c6;
+    border-radius: 6px 6px 0px 0px;
+}
+
+#tab4 {
+    border-right: 0.5px solid #c6c6c6;
+    border-top: 0.5px solid #c6c6c6;
+    border-radius: 6px 6px 0px 0px;
+}
+
+.items {
+    position:relative;
+    display: none;
+    width: 458px;
+    border: 1px solid #c6c6c6;
+    border-top: 0;
+    border-radius: 0px 0px 6px 6px;
+    padding: 20px 0;
+}
+
+.items::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 229px;
+    width: 230px;
+    height: 1px;
+    background-color: #c6c6c6;
+}
+
+.items:nth-child(2):before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 230px;
+    height: 1px;
+    background-color: #c6c6c6;
+}
+
+.items.active {
+    display: inline-block;
+}
+
+.log_input {
+    width: 410px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.log_input_inner {
+    width: 410px;
+    margin: auto;
+}
+
+.log_input1 {
+    width: 100%;
+    border: 1px solid rgb(214, 214, 214);
+    padding: 12px 0px 12px 0px;
+    border-radius: 6px 6px 0 0 ;
+}
+
+.log_input2 {
+    width: 100%;
+    border-bottom: 1px solid rgb(214, 214, 214);
+    border-left: 1px solid rgb(214, 214, 214);
+    border-right: 1px solid rgb(214, 214, 214);
+    padding: 12px 0px 12px 0px;
+    border-radius: 0px 0px 6px 6px ;
+}
+
+#icon_id, #icon_pw {
+    margin-left: 25px;
+}
+
+#id, #password {
+    font-size: 14px;
+    border: 0px;
+    margin-left: 10px;
+    color: rgb(133, 133, 133);
+}
+
+.log_keep_wrap {
+    width: 410px;
+    position: relative;
+    margin: auto;
+}
+
+.log_keep {
+    position: relative;
+    width: 280px;
+    margin-left: 20px;
+}
+
+.log_ifkeep {
+    position: absolute;
+    width: 90px;
+    top: 0;
+    right: 0;
+}
+
+.fa-check {
+    color: #777;
+    font-size: 14px;
+}
+
+#keep_font {
+    font-size: 14px;
+    color: #777;
+}
+
+.log_btn_wrap {
+    width: 410px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.log_btn {
+    width: 100%;
+    height: 52px;
+    background-color: #18ce00;
+    border-radius: 6px;
+    border: solid 1px #18ce00;
+    cursor: pointer;
+}
+
+.log_btn:hover {
+    background-color: #16c000;
+    border: solid 1px #16c000;
+}
+
+.log_btn span {
+    color:aliceblue;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.sns_log_bt {
+    text-align: center;
+    margin: 13px 0 0 0;
+}
+
+.in_logo {
+    max-width: 35px;
+    float: left;
+    margin-left: 10px;
+}
+
+#facebook {
+    max-width: 18px;
+    margin-left: 17px;
+}
+
+.in_text {
+    position: relative;
+    top:10px
+}
+
+#sns_google {
+    color:#333;
+    font-size: 20px;
+    font-weight: 700;
+    width: 400px;
+    height: 52px;
+    background-color: #fff;
+    border-radius: 6px;
+    border: solid 1px rgba(0,0,0,.15);
+    cursor: pointer;
+}
+
+#sns_google:hover {
+    color: #fff;
+    background-color: #75a5f3;
+}
+
+#sns_facebook {
+    color:aliceblue;
+    font-size: 20px;
+    font-weight: 700;
+    width: 400px;
+    height: 52px;
+    background-color: #4460A0;
+    border-radius: 6px;
+    border: solid 1px rgba(0,0,0,.15);
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#sns_facebook:hover {
+    background-color: #5b80d6;
+}
+
+#sns_kakao { 
+    color:#333;
+    font-size: 20px;
+    font-weight: 700;
+    width: 400px;
+    height: 52px;
+    background-color: #FEE500;
+    border-radius: 6px;
+    border: solid 1px rgba(0,0,0,.15);
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#sns_kakao:hover {
+    background-color: #ebd937;
+}
+
+.find_wrap {
+    width: 360px;
+    display: flex;
+    margin: auto;
+    padding: 15px 0 35px;
+    text-align: center;
+}
+
+.find_wrap li{
+    width: 120px;
+    position: relative;
+}
+.find_wrap li a{
+    font-size: 14px;
+    color: #777;
+}
+
+.find_wrap li+li::before {
+    content: '';
+    position: absolute;
+    top: 5.5px;
+    left: 1px;
+    right: 0;
+    width: 1px;
+    height: 12px;
+    border-radius: 0.5px;
+    background-color: #dadada;
+}

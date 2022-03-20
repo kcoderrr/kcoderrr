@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+
+    </header>
+    <div class="signup_pannel">
+        <!-- 타이틀 -->
+        <div class="signup_title"> 
+            <a href="index.html"><img id="head_logo" src="/logo/head_logo_signup.png" alt=""></a>
+            <h1>Create an account</h1>
+            <p id="already_id">Already have an account? <a href="login.html"><span id="sign_in">Sign in</span></a></p>
+        </div>
+
+        <!-- 소셜 회원가입 -->
+        <div class="signup_sns">
+            <p id="signup_social">Sign up with social</p>
+            <div class="signup_sns_bt">
+                <a href=""><img id= "bt_google" src="/image/sml-google-logo.svg" alt=""></a>
+                <a href=""><img id= "bt_facebook" src="/image/f_logo_RGB-Blue_58.png" alt=""></a>
+                <a href=""><img id= "bt_kakao" src="/image/sml-kakao-logo.svg" alt=""></a>
+            </div>
+        </div>
+        <hr class="line">
+        <!-- 이메일 회원가입 -->
+        <div class="signup_e">
+            <p id="signup_email">Sign up with email</p>
+            <div class="input_email">
+                <label class="field_label" id="email" for="email">Email address</label>
+                <input type="email" class="field_input" autocomplete="email">
+            </div>
+            <div class="input_name">
+                <label class="field_label" id="name" for="name">First name</label>
+                <input type="text" class="field_input" autocomplete="given-name">
+                <label class="field_label" id="name" for="name">Last name</label>
+                <input type="text" class="field_input" autocomplete="given-name">
+            </div>
+            <div class="input_password">
+                <label class="field_label" id="email" for="password">Password</label>
+                <input type="password" class="field_input" autocomplete="new-password">
+            </div>
+            <div class="input_birth">
+                <label class="field_label" id="birth" for="password">Date of Birth</label>
+                <div class="yymmdd">
+                    <input class="sel" type="text" id="yy" placeholder="year">
+
+                    <select class="sel" id="mm" aria-label="month">
+                        <option value="">month</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                        <option value="">6</option>
+                        <option value="">7</option>
+                        <option value="">8</option>
+                        <option value="">9</option>
+                        <option value="">10</option>
+                        <option value="">11</option>
+                        <option value="">12</option>
+                    </select>
+
+                    <input class="sel" type="text" id="dd" placeholder="day">
+                </div>
+            </div>
+            <div class="input_phone">
+                <label class="field_label" id="phone" for="phone">Phone number</label>
+                <input type="text" class="field_input" autocomplete="">
+            </div>
+            <div class="create_bt">
+                <button class="ca_bt">Create account</button>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
